@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ContentGen</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✦ ContentGen</div>
+
+    <nav>
+        <a href="#">My Content</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="hero">
+        <h1>Create content in seconds.</h1>
+
+        <p>
+            Turn your ideas into polished content with the help of AI.
+        </p>
+    </section>
+
+
+    <section class="generator-card">
+
+        <h2>Create your content</h2>
+
+        <form id="contentForm">
+
+            <div class="form-group">
+
+                <label for="topic">What do you want to create?</label>
+
+                <textarea
+                    id="topic"
+                    name="topic"
+                    placeholder="Enter your topic..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="options">
+
+                <div class="form-group">
+
+                    <label for="contentType">Content Type</label>
+
+                    <select id="contentType" name="contentType">
+
+                        <option value="social media post">
+                            Social Media Post
+                        </option>
+
+                        <option value="blog post">
+                            Blog Post
+                        </option>
+
+                        <option value="product description">
+                            Product Description
+                        </option>
+
+                        <option value="advertisement">
+                            Advertisement
+                        </option>
+
+                        <option value="email">
+                            Email
+                        </option>
+
+                        <option value="YouTube description">
+                            YouTube Description
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="tone">Tone</label>
+
+                    <select id="tone" name="tone">
+
+                        <option value="professional">
+                            Professional
+                        </option>
+
+                        <option value="friendly">
+                            Friendly
+                        </option>
+
+                        <option value="casual">
+                            Casual
+                        </option>
+
+                        <option value="persuasive">
+                            Persuasive
+                        </option>
+
+                        <option value="funny">
+                            Funny
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="length">Length</label>
+
+                    <select id="length" name="length">
+
+                        <option value="short">Short</option>
+
+                        <option value="medium" selected>
+                            Medium
+                        </option>
+
+                        <option value="long">Long</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <button type="submit" id="generateBtn">
+                ✦ Generate Content
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <section class="result-section">
+
+        <div class="result-header">
+
+            <h2>Generated Content</h2>
+
+            <span id="wordCount">0 words</span>
+
+        </div>
+
+
+        <div class="result-card">
+
+            <p id="result">
+                Your generated content will appear here.
+            </p>
+
+        </div>
+
+
+        <div class="result-actions">
+
+            <button id="copyBtn" disabled>
+                Copy
+            </button>
+
+            <button id="regenerateBtn" disabled>
+                Regenerate
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="/js/script.js"></script>
+</body>
+</html>
